@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+<body>
+    <script>
+        let numero1 = prompt('Digite um número')
+        numero1 = parseFloat(numero1)
+        let numero2 = prompt ('Digite outro número')
+        numero2 = parseFloat (numero2)
+        let soma =(numero1+numero2)
+        alert ('A soma dos dois números é: ' + soma)
+
+        /*A função parseFloat em JavaScript é usada para analisar um argumento e convertê-lo em um número de ponto flutuante (número decimal). Ela tenta extrair o número decimal a partir do início da string fornecida e ignora qualquer caractere não numérico após o número.
+
+        (Funcionalidade do parseFloat)
+        Conversão de string para número: Converte uma string que representa um número (com ou sem parte decimal) em um valor numérico de ponto flutuante.
+        Ignora espaços em branco iniciais: parseFloat ignora espaços em branco iniciais na string de entrada.
+        Parada na primeira ocorrência de um caractere inválido: Se encontrar um caractere que não pode ser parte de um número válido, ele interrompe a análise e retorna o número analisado até aquele ponto.*/
+
+        /*A função parseInt em JavaScript é utilizada para converter uma string em um número inteiro. Ela analisa a string e tenta extrair um valor inteiro a partir do início da string. Se encontrar um caractere que não pode fazer parte de um número inteiro, a análise é interrompida e o valor inteiro até aquele ponto é retornado.
+
+        (Funcionalidade do parseInt)
+        Conversão de string para número inteiro: Converte uma string que representa um número inteiro em um valor numérico inteiro.
+        Ignora espaços em branco iniciais: parseInt ignora espaços em branco iniciais na string de entrada.
+        Parada na primeira ocorrência de um caractere inválido: Se encontrar um caractere que não pode ser parte de um número inteiro, ele interrompe a análise e retorna o número analisado até aquele ponto.*/
+
+        /*A função Number em JavaScript é usada para converter um valor para um número. Diferente de parseFloat e parseInt, a função Number tenta converter o valor inteiro fornecido para um tipo numérico, seja ele inteiro ou de ponto flutuante. Ela pode converter strings, booleanos, null, undefined, e outros tipos para números.
+
+        Funcionalidade do Number
+        Conversão direta: Converte um valor para um número, aplicando regras específicas para diferentes tipos de dados.
+        String: Converte strings que representam números (inteiros ou decimais) em valores numéricos.
+        Booleano: Converte true para 1 e false para 0.
+        Null: Converte null para 0.
+        Undefined: Converte undefined para NaN (Not-a-Number).
+        Outros tipos: Para objetos e arrays, tenta converter para uma string e depois para um número, se possível.*/
+
+    </script>
+    
+    
+    
+</body>
+</html>
