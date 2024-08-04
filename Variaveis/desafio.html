@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+</head>
+<body>
+    <h1>Desafio com operadores aritiméticos</h1>
+    <script>
+        //Pedir para o usuário digitar um número
+        //Converter o número em inteiro
+        //Pedir para digitar outro número
+        //Converter o número em inteiro
+        //Mostrar a divisão concatenando com o texto "A divisão é:..."
+        //Mostrar a multiplicação concatenando com o texto a "a multiplicação é:..."
+        //Mostrar a subtração concatenando com o texto a "a subtração é:..."
+        //Mostrar a soma concatenando com o texto a "a soma é:..."
+
+        let numero1 = prompt('Digite um número:')
+        numero1= parseInt(numero1)
+        let numero2 = prompt('Digite outro número')
+        numero2 = parseInt(numero2)
+
+        let soma =(numero1+numero2)
+        alert('O resultado da soma é :'+soma)
+        let multiplicacao =(numero1*numero2)
+        alert('O resultado da multiplicação é :'+multiplicacao)
+        let subtracao =(numero1-numero2)
+        alert('O resultado da subtração é :'+subtracao)
+        let divisao =(numero1/numero2)
+        alert('O resultado da divisão é :'+divisao)
+
+        /*
+        A segunda parte do código também poderia ser feita sem a criação de uma variável 
+        para guarda o resultado da operação, poderíamos fazer a operação diretamento no 
+        'alert'
+
+        alert('O resultado da soma é :' + numero1+numero2)
+        No caso da multiplicação, ela irá acontecer antes e depois irá concatenar 
+        com o testo, isso se dá por causa da ordem de procedência
+
+        "Ordem de procedência"
+        * / 
+        %
+        + -
+
+        O uso do parentese altera a ordem de procedência em uma operação:
+
+        Exemplo:
+
+        alert('O resultado da subtração é :'+ (numero1-numero2))
+        -Presicamos usar o parenteses para que a subtração fosse feita primero que
+        a adição. 
+
+        -Em relação as outras operações, mesmo que elas tenham ordem de procedência em 
+        relação ao sinal de + na concatenação, é interessante usar os parenteses 
+        para ficar claro os objetivo do código
+
+        Exemplo:
+
+        alert('O resultado da soma é :' + (numero1+numero2))
+
+        
+        */
+
+
+    </script>
+</body>
+</html>
