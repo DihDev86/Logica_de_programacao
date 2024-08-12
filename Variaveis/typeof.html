@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String, Number, Boolean - Typeof</title>
+</head>
+<body>
+    <h1>String, Number, Boolean - Typeof</h1>
+    <script>
+        let mensagem = "Olá, eu sou uma 'mensagem de texto'"
+        console.log(mensagem)
+
+        console.log (typeof 0)
+        console.log (typeof true)
+        console.log ( typeof String (0)) // Converte o em string
+
+        let isValid = true
+
+        console.log (typeof isValid)
+
+        console.log (Boolean ("0")) // true
+        console.log (Boolean(0.1)) // true 
+        console.log (Boolean (0)) // false
+        console.log (Boolean (undefined)) // false
+        console.log (Boolean (null)) // false
+        console.log (Boolean ("")) // false 
+
+        let naoDeclarado
+        console.log (naoDeclarado) // A variável será undefined, porque não definimos nenhum valor
+    
+        naoDeclarado =0 // Podemos redefinir o valor da variável
+        console.log(naoDeclarado)
+
+        let n = parseFloat("a") 
+        console.log (n) // Não é possivel converter e o retorno será NAN
+        console.log (typeof n) // Ao tentar converter temos um retorno NAN, e o tipo de dado ao invés de ser string se torna Number.
+        console.log ("-------")
+
+        console.log (typeof undefined) // tipo undefined
+        console.log (typeof null)
+        console.log (typeof 0) 
+        console.log (typeof "")
+        console.log (typeof true)
+
+        console.log (typeof ((10).toString()))
+
+    </script>
+</body>
+</html>
