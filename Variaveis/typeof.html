@@ -13,7 +13,8 @@
 
         console.log (typeof 0)
         console.log (typeof true)
-        console.log ( typeof String (0)) // Converte o em string
+        console.log (typeof String (0)) // Converte o 0 em string
+        console.log (typeof NaN) // O Not-a-number é considerado um dado tipo number, quando tentamos converter um dado que não pode ser convertido para number o mesmo não se converte para um número, mas ele se torna um dado tipo number.
 
         let isValid = true
 
@@ -21,12 +22,16 @@
 
         console.log (Boolean ("0")) // true
         console.log (Boolean(0.1)) // true 
-        console.log (Boolean (0)) // false
+        console.log (Boolean (0)) // false 
         console.log (Boolean (undefined)) // false
         console.log (Boolean (null)) // false
-        console.log (Boolean ("")) // false 
+        console.log (Boolean ("")) // false
+        console.log (Boolean(NaN)) 
+        //Em Boolean 0 e " " vazio são considerados dados do tipo falso. Undefined,null e NAN também são dados falsos.
+        //Os demais valores são dados do tipo true.
+        
 
-        let naoDeclarado
+        let naoDeclarado //Variável undefined
         console.log (naoDeclarado) // A variável será undefined, porque não definimos nenhum valor
     
         naoDeclarado =0 // Podemos redefinir o valor da variável
@@ -38,7 +43,7 @@
         console.log ("-------")
 
         console.log (typeof undefined) // tipo undefined
-        console.log (typeof null)
+        console.log (typeof null)// Erro do JS
         console.log (typeof 0) 
         console.log (typeof "")
         console.log (typeof true)
