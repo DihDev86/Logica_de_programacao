@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correção do professor</title>
+</head>
+<body>
+    <h1>Desafio 3, correção do professor.</h1>
+
+    <script>
+        let n1= parseFloat(prompt("Digite a nota 1: "))
+        let n2= parseFloat(prompt("Digite a nota 2: "))
+
+        if(n1<=10 && n2<=10 && n1>=0 && n2>=0){
+            let media = (n1+n2) /2
+            if(media>=7){
+                alert("Aprovado!")
+            }
+            else{
+                alert("Reprovado!!!")
+            }
+        }
+        else{
+            alert("Digite apenas números entre 0 e 10")
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

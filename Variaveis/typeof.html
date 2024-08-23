@@ -26,7 +26,7 @@
         console.log (Boolean (undefined)) // false
         console.log (Boolean (null)) // false
         console.log (Boolean ("")) // false
-        console.log (Boolean(NaN)) 
+        console.log (Boolean(NaN)) //false
         //Em Boolean 0 e " " vazio são considerados dados do tipo falso. Undefined,null e NAN também são dados falsos.
         //Os demais valores são dados do tipo true.
         
@@ -44,9 +44,9 @@
 
         console.log (typeof undefined) // tipo undefined
         console.log (typeof null)// Erro do JS
-        console.log (typeof 0) 
-        console.log (typeof "")
-        console.log (typeof true)
+        console.log (typeof 0) // tipo number
+        console.log (typeof "") // tipo string
+        console.log (typeof true) // tipo boolean
 
         console.log (typeof ((10).toString()))
 

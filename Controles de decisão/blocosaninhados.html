@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco Aninhado (Nested Block)</title>
+</head>
+<body>
+    <h1>Bloco Aninhado (Nested Block)</h1>
+
+    <script>
+
+        let idade = parseFloat(prompt("Digite a sua idade:"))
+        let temCarteira= prompt("Você tem CNH? digite 1 se sim e 2 se não:")
+
+        if (idade >= 18) { // Bloco externos
+            if (temCarteira == 1){ // Bloco aninhado dentro do primeiro 'if'
+                alert("Pode dirigir.");
+        } else {
+                alert("Não pode dirigir porque não tem carteira.");
+            }   
+        } 
+        
+        else {//bloco que será executado caso nenhuma das condições acima sejam executadas 
+            alert("Não pode dirigir porque é menor de idade.");
+        }
+
+    </script>
+</body>
+</html>
