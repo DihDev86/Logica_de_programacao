@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laçõs de repetição</title>
+</head>
+<body>
+    
+    <h1>Loop - For</h1>
+
+        <script>
+            let n = parseFloat(prompt("Digite um número:"))
+                // Foi declarada a variável (i =0) que será o contador
+                // Enqunato i for <= 
+                // i++ é a condição de saída
+                // Enquanto a condição for verdadeira o contador i será acrescentado
+                // Enquanto o i for < 0 a condição de saída será executada
+                // Em seguida será exibido na tela o código dentro do { }
+                /* A vantagem do loop for é que ele vai trabalhar de uma forma 
+                mais declarativa, ou seia, dentro do (é declarado tudo que eu preciso) para ele funcionar. Declaro variável(let i =0), escrevo a condição (i<= 1000) e em seguida a condição de saída (i++) */
+                
+                if(!isNaN(n)){
+                
+                for(let i =0;i <= 1000; i++ ){
+                    document.write(n + "x" + i + "=" + n*i + "</br>")
+                }
+                
+                document.write("Saiu do loop!")
+
+
+            }else{
+                document.write("Digite apenas números!")
+            }
+        </script>
+
+
+    
+</body>
+</html>

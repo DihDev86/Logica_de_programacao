@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+<body>
+    <h1>Girar os dados</h1>
+        
+        <script>
+            
+            let dado1 = parseInt(Math.random() * 6+1)
+            let dado2 = parseInt(Math.random() * 6+1)
+
+            let contador = 1
+
+            while(dado1 !== dado2){ //Enquanto dado1 for diferente de dado2, o dado gira mais uma vez conforme a var contador
+                console.log(dado1 , dado2) // Mostra os 2 números de cada dado jogado no console
+                contador++ // Rodar 1 vez, ou seja, incrementar mais 1, só para de rodar quando os dados forem iguais
+                dado1 = parseInt(Math.random() * 6+1)
+                dado2 = parseInt(Math.random() * 6+1)
+
+            
+            }
+            console.log("Os dados foram jogados "+contador+" vezes. E o número repetido foi o " + dado1)
+
+            console.log("--------------")
+
+            dado1 = parseInt(Math.random() * 6+1)
+            dado2 = parseInt(Math.random() * 6+1)
+
+            contador = 1
+
+            do{//Ele vai executar o código independente de ser true ou não
+                console.log(dado1 , dado2) // Mostra os 2 números de cada dado jogado no console
+                contador++ // Rodar 1 vez, ou seja, incrementar mais 1, só para de rodar quando os dados forem iguais
+                dado1 = parseInt(Math.random() * 6+1)
+                dado2 = parseInt(Math.random() * 6+1)
+            }while(dado1 !== dado2)
+
+            // Todos os códigos abaixo do "do" serão executados, independente da condição do "while" ser ou não atendida
+            // Depois disso, o código começa  a executar o "while" até condição que é dado1 !== dado2 não for mais verdadeira
+            // Ou seja, os dois dados precisam ter números iguais para a condição ser atendida e o dado para de rodar 
+
+            console.log("Os dados foram jogados "+contador+" vezes. E o número repetido foi o " + dado1)
+
+
+
+
+
+        </script>
+</body>
+</html>

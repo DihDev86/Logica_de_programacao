@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+
+        <script>
+            let n= parseInt(prompt("Digite um número: "))
+
+            for(let contador = 1; contador <=1000; contador++){
+                 //variavel       condição         condição para ser True or False  
+                document.write(n + "x" + contador + "=" + n * contador + "<br>")// break rolling  
+                    if(contador % 10 === 0){ // Quando contator tiver em 10 e o resto da divisão for 0  
+                        document.write("<hr>") // Adicionar uma linha horizontal a cada 10 contadores
+                    }
+
+            }
+            
+            /* if(contador % 10 === 0):
+            Aqui está o if. Ele verifica se o valor do contador é divisível por 10.
+            O operador % (módulo) retorna o resto da divisão. Se contador % 10 for igual a 0, 
+            significa que contador é um múltiplo de 10 (como 10, 20, 30, etc.). */
+
+
+        </script>
+    
+</body>
+</html>
