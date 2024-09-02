@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+
+        let nomes = ["Diêgo","Talita","Gabriela","Filho(a)2","Filho(a)3 "] // Array com sintaxe literal
+
+        //let nomes = new Array("Diêgo","Talita","Gabriela","Filho(a) 2") Sintaxe com funcão construtora
+
+        //Exibe no console todos os dados dentro da array
+        /*console.log(nomes[0])
+        console.log(nomes[1])
+        console.log(nomes[2])
+        console.log(nomes[3])*/
+
+        // Esse comando acima é uma repetição que daria  para ser usada em loop
+
+        for (let i =0; i < nomes.length; i++){ 
+            //Let i começa em zero 
+            // se i < nomes.length i++
+            //Enquanto ir for menor que o tamanho de dados dentro da array, incremente + 1
+            //Dessa forma posso tirar ou acrescentar dados dentro da array, porque a leitura sempre será em cima do tamanho dos dados que tenho nela, onde os mesmo serão exibidos. 
+
+            document.write("Nome:" + nomes[i]+"<br>")
+            //Enquanto o "for " for executado , os dados serão exibidos desta forma. 
+        }
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

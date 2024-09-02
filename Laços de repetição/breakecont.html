@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break e continue</title>
+</head>
+<body>
+    <h1>Break vs continue</h1>
+
+    <script>
+
+        for(let i= 1; i < 10; i++){ // Var i recebe 1 , enquanto ir for < 10; i++
+            console.log(i) // Mostra cada incremento no i
+            if(i=== 5){ // Se i for igual a 5
+                break   // O break faz com que o loop seja interrompido na condição acima
+            }
+
+        }
+
+        console.log("Fim do loop com break!")// É executado depois do break
+
+        for(let i= 1; i < 10; i++){ // Var i recebe 1 , enquanto ir for < 10; i++
+            console.log(i) // Mostra cada incremento no i
+            if(i=== 5){ // Se i for igual a 5
+                continue   // O continue faz com que a condição acima continue até i < 10
+            }
+
+        }
+
+        console.log("Fim do loop com continue!")// É executado depois que toda as condições acima forem atendidas
+        
+        let x = 1; // Var x =1
+        while(x < 10){ // enquanto x menor que 10 
+            console.log(x) // exibir x na tela
+            if(x ===5){ // se x for iguail a 5
+                break   // quando a condição acima for atendida o break é executado
+            }
+            x++ // sempre incrementar +1 ao x até o a condição e o retorno do if ser atendida
+        }
+
+        console.log("Fim do loop while com break")
+
+
+
+    </script>
+    
+</body>
+</html>

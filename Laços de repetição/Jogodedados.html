@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos de dados</title>
+</head>
+<body>
+
+    <h1>Dois dados</h1>
+
+    <script>
+            
+            let quantasVezesDadosRodados =0 // var que vai quantificar e guardar quantas vezes os dados foram rodados 
+
+            let quantasVezesSomaEhPar = 0 // vai que vai quantificar e guardar quantas vezes a soma foi par
+
+
+            // // Enquanto for true, execute os comandos abaixo: que vai girar os números de forma randômica.
+            while(true){
+                let dado1 = parseInt(Math.random() *6) +1 // Var declarada com número randomico que vai de 1 à 6.
+                let dado2 = parseInt(Math.random() *6) +1
+
+                // vai exibir no console os valores das variaveis
+                console.log(dado1, dado2, quantasVezesDadosRodados , quantasVezesSomaEhPar) 
+                quantasVezesDadosRodados++
+
+                // Esse "se" vai fazer a soma dos dados e checar se soma % 2 === 0, se for ele somará quantas vezes foi par.
+                if((dado1 + dado2) % 2 ===0 ){// Se a soma de dado1+dado2 e sua divisão for 0, significa que o número é par  
+                    quantasVezesSomaEhPar++  // Se a soma dos dados for par é somado +1
+                }
+
+                // Esse "se " vai servir para dá um break na contagem de quantasVezesSomaEhpar 
+                if(quantasVezesSomaEhPar >= 10){ // quando a condição chegar >= 10, o break é executado
+                    break // esse break irá evitar um loop eterno.
+                }
+
+            }
+
+            // Exibição de mensagens na tela.
+            console.log("Quantas vezes os dados foram jogados " + quantasVezesDadosRodados + " vezes")
+            console.log("A soma dos dados foram pares " +quantasVezesSomaEhPar+ " vezes")
+            console.log("Fim do Programa!")
+
+            // Para saber se um número é par ele precisamos fazer o módulo dele por 2 ou seja % 2.
+            // Se o resto da divisão for 0, significa que o número é par.
+
+
+
+    </script>
+
+</body>
+</html>
