@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma</title>
+</head>
+<body>
+    <h1>Somando todos os números de uma array</h1>
+    <script>
+        const numeros =[2,4,8,10,6,15,25,31,90]
+
+        let soma=0 
+        // vai guardar o valor somado de todos os números da array
+
+        for(let i=0 ; i < numeros.length ;  i++){
+            //let i: acessa o indice da array começando do zero
+            //i < numeros.length: enquanto i for < que o tamanho da array = i++
+            //i++: faz com que o loop percorra todos os valores da array enquanto a condição for atendida
+
+            let n = numeros[i]
+            // Esse código pega os valores em cada posição da array e armazena em n
+
+            soma = soma + n
+            // Esse código pega o valor atual de soma e adiciona n a ele 
+            // Em seguida, o resultado dessa soma é armazenado novamente na var soma, substituido o valor 
+
+    
+        }
+
+        alert("A soma de todos os números é: " + soma)
+
+
+
+
+    </script>
+</body>
+</html>

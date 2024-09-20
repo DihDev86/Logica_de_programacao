@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicando valores de uma Array</title>
+</head>
+<body>
+    <h1>Multiplicando valores de uma array e colocando em outra</h1>
+    <script>
+
+        let numeros =[4,8,0,4,23,98,9,100,7]
+        let numeros2=[]
+        /*A idéia é multiplicar os valores da Array "numeros" e coloca-los na 
+        Array "numeros2"*/
+
+        for(let i= 0; i < numeros.length; i++){
+            let numero = numeros [i] * 2
+
+        /*Enquanto i=0 < numeros.length (número de elementos que existem na array)
+        O i começa em 0 e a contagem de elementos em 1 
+        Exemplo: Se temos 5 elementos dentro da array o seu indice será de 5
+        enquanto que o contador i começa em 0, ou seja, o contado vai até no máximo 4
+        e quando não houver mais indicia a ser contado pelo contador, ele terminará 
+        sendo menor que o numeros.length e o loop será encerrado.*/
+
+        numeros2.push(numero)
+        /*A expressão numeros2.push(numero) em JavaScript faz o seguinte:
+
+        numeros2: É o nome de um array.
+        .push(): É um método do array que adiciona um novo elemento ao final do array.
+        numero: É o valor que será adicionado ao array numeros2. */
+
+        }
+        
+        console.log(numeros2)
+        // Exibe o novo valor da array "numeros2" no console.
+
+
+
+    </script>
+</body>
+</html>

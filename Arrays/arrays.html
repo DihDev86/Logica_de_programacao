@@ -10,7 +10,7 @@
 
     <script>
 
-        let nomes = ["Diêgo","Talita","Gabriela","Filho(a)2","Filho(a)3 "] // Array com sintaxe literal
+        let nomes = ["Diêgo","Talita","Gabriela","Filho(a)2","Filho(a)3 ","Filho(a)4 ","Filho(a)5 "] // Array com sintaxe literal
 
         //let nomes = new Array("Diêgo","Talita","Gabriela","Filho(a) 2") Sintaxe com funcão construtora
 
@@ -22,15 +22,31 @@
 
         // Esse comando acima é uma repetição que daria  para ser usada em loop
 
+        let nomeDigitado = prompt("Digite seu nome:")
+        //Var com nome que será digitado para ser colocado na array
+
+        nomes[nomes.length] =nomeDigitado
+        /*Essa linha de código nomes[nomes.length] = nomeDigitado está inserindo um novo valor em um array (lista) chamado nomes. Aqui vai uma explicação simples:
+
+        nomes é o array onde estamos guardando uma lista de nomes.
+        nomes.length dá o número de elementos que já estão no array.
+        Quando você usa nomes[nomes.length], está acessando a posição logo após o último elemento do array. Por exemplo, se o array tem 3 elementos, nomes[3] seria a próxima posição livre.
+        nomeDigitado é o valor que você quer adicionar à lista.*/
+
+
         for (let i =0; i < nomes.length; i++){ 
             //Let i começa em zero 
             // se i < nomes.length i++
-            //Enquanto ir for menor que o tamanho de dados dentro da array, incremente + 1
+            //Enquanto ir for menor que o tamanho de dados dentro da array(nomes.length), incremente + 1
             //Dessa forma posso tirar ou acrescentar dados dentro da array, porque a leitura sempre será em cima do tamanho dos dados que tenho nela, onde os mesmo serão exibidos. 
 
             document.write("Nome:" + nomes[i]+"<br>")
-            //Enquanto o "for " for executado , os dados serão exibidos desta forma. 
+            //Enquanto o "for " for executado , os dados serão exibidos desta forma.
+            //No nomes[i] será exibido os valores dentro da array seguindo a contagem da VAR i 
         }
+
+        document.write("A lista de nomes possui "+nomes.length+" elementos")
+        //Exibi o número de elementos de dentro da lista
 
 
 

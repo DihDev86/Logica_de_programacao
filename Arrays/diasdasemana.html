@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias da semana</title>
+</head>
+<body>
+    <h1>Arryas - Dias da semana</h1>
+    <script>
+
+        const diasSemana = ["Domingo", "segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+
+        const hoje = new Date ()//const significa que estamos criando uma variável cujo valor não vai ser reatribuído.
+
+        /*Em termos simples, a linha const hoje = new Date() está criando uma variável chamada hoje que vai armazenar a data e hora atuais no momento em que o código é executado.
+        new Date() cria um novo objeto de data que representa o exato momento atual (data e hora).
+        Então, quando você usar hoje, ela vai ter algo como "15 de setembro de 2024, 14:35:21" (ou seja, o dia, mês, ano e a hora exata). */
+
+        const diaSemanaHoje = hoje.getDay ()
+        /*  linha const diaSemanaHoje = hoje.getDay() faz o seguinte:
+
+        const: Cria uma variável chamada diaSemanaHoje.
+        hoje.getDay(): Usa o método getDay() no objeto hoje, que retorna o dia da semana como um número, onde:
+        0 = Domingo
+        1 = Segunda-feira
+        2 = Terça-feira
+        3 = Quarta-feira
+        4 = Quinta-feira
+        5 = Sexta-feira
+        6 = Sábado*/
+        
+        //alert(diaSemanaHoje)
+        
+        alert("olá! Hojé é " + diasSemana[diaSemanaHoje])
+        /* alert(): Exibe uma mensagem em uma janela pop-up no navegador.
+        "olá! Hoje é ": Isso é uma string fixa, parte da mensagem que será exibida.
+        diasSemana[diaSemanaHoje]: Acessa um valor no array diasSemana usando o índice diaSemanaHoje. Esse valor corresponde ao dia da semana (por exemplo, "Domingo", "Segunda", etc.), dependendo do índice retornado por getDay(). */ 
+
+    </script>
+    
+</body>
+</html>
