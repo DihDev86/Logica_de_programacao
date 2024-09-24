@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar onde João mora</title>
+</head>
+<body>
+    <script>
+        const endereco = {
+            logradouro: "Rua do Rio",
+            numero: 11
+        }
+
+        const pessoa = {
+            nome:"Joao",
+            sobrenome:"Ernandes",
+            endereco: endereco
+        }
+
+        document.write(`O ${pessoa.nome} mora na ${pessoa.endereco.logradouro} número ${pessoa.endereco.numero}`)
+    </script>
+    
+</body>
+</html>
