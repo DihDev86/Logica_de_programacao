@@ -8,6 +8,22 @@
 <body>
     <h1>Loop em propriedades do objeto</h1>
 
+    <script>
+        const endereco = {
+            logradouro: "Rua do Rio",
+            numero: 11
+        }
+
+        const pessoa = {
+            nome:"Diego",
+            sobrenome:"Ernandes",
+            endereco: endereco
+        }
+
+        for(let prop in pessoa){
+            console.log(prop+":"+pessoa[prop])
+        }
+    </script>
     
     
 </body>
