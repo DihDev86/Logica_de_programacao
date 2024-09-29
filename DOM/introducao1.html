@@ -11,9 +11,41 @@
 <hr>
     <input type="text" id="user" value="Campo de texto">
 
+    <h2>Lista de Tarefas</h2>
+    <ol id="listaTarefas">
+        <li>Aprender HMTL/CSS</li>
+        <li>Aprender Lógica de Programação</li>
+        <li>Aprender JavaScript</li>
+        <li>Aprender DOM</li>
+    </ol>
+
     <script> 
-        document.getElementById("titulo").textContent ="Alteração"
+        
+
+        const lista = document.getElementById("listaTarefas")
+            lista.innerHTML += "<li>Criar Projeto</li>"
+
+    
+    /*Vamos quebrar isso em partes para ficar mais simples de entender:
+
+    const lista = document.getElementById("listaTarefas"):
+
+    Isso pega um elemento HTML com o id "listaTarefas" e armazena na variável lista.
+    Por exemplo, se você tiver algo assim no HTML:
+    <ul id="listaTarefas"></ul>
+    O JavaScript vai encontrar essa lista.
+    
+    lista.innerHTML += "<li>Criar Projeto</li>":
+
+    O innerHTML permite modificar o conteúdo HTML dentro do elemento lista.
+    O += significa "acrescentar". Aqui, estamos adicionando mais um item (<li>Criar Projeto</li>) à lista.
+    O código cria um novo item de lista (usando a tag <li>) dentro da <ul>, e o texto que aparece será "Criar Projeto".
+    
+    Explicando de maneira prática:
+    Esse código vai pegar uma lista de tarefas (com o id "listaTarefas") e adicionar um item novo com o texto "Criar Projeto". Se você rodar esse código, vai aparecer na lista mais um item dizendo "Criar Projeto". */
     </script>
+
+    
     
 </body>
 </html>
