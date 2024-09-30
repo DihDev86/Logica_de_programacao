@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays com objetos</title>
+</head>
+<body>
+    <h1>Arrays com objetos</h1>
+
+    <ul id="listaPessoas">
+        <!-- <li>Diêgo: diegobass4052gmail.com</li>
+        <li>Talita: litasilva_mayara@hotmail.com</li>
+        <li>Gabriela: mgabi@gmail.com</li> -->
+    </ul>
+    
+    <script>
+        const pessoas =[
+            {nome: "Diêgo", email: "diegobass405@gmail.com"},
+            {nome: "Talita", email: "litasilva_mayara@hotmail.com"},
+            {nome: "Gabriela", email: "mgabi@gmail.com"},
+        ]
+
+        // Esse código define um array chamado pessoas, que contém três objetos. Cada objeto tem duas propriedades: nome e email. Essas propriedades armazenam o nome e o e-mail de cada pessoa. É uma maneira comum de organizar informações relacionadas em JavaScript, facilitando o acesso e a manipulação desses dados.
+
+        const listaPessoas = document.getElementById("listaPessoas")
+        // document.getElementById("listaPessoas"): Isso busca um elemento HTML específico dentro da página, que tenha o ID "listaPessoas". No HTML, os elementos podem ter um id, e essa função é usada para encontrar esse elemento.
+
+        for(let i = 0 ; i < pessoas.length; i++){
+            console.log(pessoas[i])
+
+            // console.log(pessoas[i]) imprime o objeto da posição i do array pessoas no console.
+
+            listaPessoas.innerHTML += "<li>"+pessoas[i].nome + " : "+pessoas[i].email+ "</li>"
+            // O código adiciona novos itens à lista no HTML usando innerHTML, independentemente de a lista anterior estar comentada. Se a lista estava em comentários, os novos itens serão exibidos normalmente, pois são adicionados dinamicamente.
+        }
+
+
+    </script>
+
+</body>
+</html>
